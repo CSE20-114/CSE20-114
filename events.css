@@ -1,0 +1,73 @@
+body{ 
+    font-family: sans-serif;
+    background: #009688;
+  }
+  
+  img {
+    width: 100%; 
+    height: auto;
+  }
+  
+  #banner .headtext {
+    font-size: 30px;  
+    margin-bottom: .5em;
+    color: #fff;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  /* hover styles */
+  .events-listing {
+    position: relative;
+  }
+  
+  .events-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .events-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .events-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .events-listing:hover .events-title {
+    opacity: 1;
+  }
+  
+  .events-listing:hover .events-image img {
+    filter: blur(10px);
+  }
+  
+  
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .events-title {
+      opacity: 1;
+    }
+    .events-image img {
+      filter: blur(2px);
+    }
+  }

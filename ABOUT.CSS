@@ -1,0 +1,37 @@
+#banner{
+    background:#009688;
+    background-size: auto;
+    height: 100%;
+}
+.banner-text{
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: justify;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 64px;
+}
+.banner-text h1{
+    text-align: center;
+    font-size: 65px;
+}
+.banner-text p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-text h3{
+    text-align: center;
+    font-size: 42px;
+}
+.banner-text h4{
+    padding-top: 16px;
+    text-align: center;
+    font-size: 34px;
+}
+.banner-text h5{
+    padding-top: 32PX;
+    color: #000;
+    text-align: center;
+    font-size: 56px;
+}
